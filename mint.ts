@@ -13,7 +13,7 @@ const userWalletSigner = createSignerFromKeypair(umi, userWallet);
 const metadata = {
     name: "Octaloop Technology",
     symbol: "Octa",
-    uri: "https://ipfs.io/ipfs/Qmb6nYGLxXdDpf3iPYKBtN2f7bZvgu7LnZuVmFqvr5xNgp",
+    uri: "https://chocolate-hidden-eagle-127.mypinata.cloud/ipfs/QmZnV6gUGCrcj3NjfQUyPzFhPotamqshMeWEB9hHJDM8Lm",
 };
 
 const mint = generateSigner(umi);
@@ -26,9 +26,9 @@ createAndMint(umi, {
     name: metadata.name,
     symbol: metadata.symbol,
     uri: metadata.uri,
-    sellerFeeBasisPoints: percentAmount(0),
+    sellerFeeBasisPoints: percentAmount(0),    
     decimals: 9,
-    amount: 1844674407370955161,
+    amount: 1800000000000000000,
     tokenOwner: userWallet.publicKey,
     tokenStandard: TokenStandard.Fungible,
     }).sendAndConfirm(umi).then(() => {
