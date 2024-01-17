@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node mint.ts"
+    "mint": "ts-node mint.ts",
+    "transfer": "ts-node transfer.ts"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "@metaplex-foundation/mpl-token-metadata": "^3.1.2",
     "@metaplex-foundation/umi": "^0.9.0",
     "@metaplex-foundation/umi-bundle-defaults": "^0.9.0",
+    "@solana/spl-token": "^0.3.11",
     "@solana/web3.js": "^1.89.1",
     "arg": "^5.0.2",
     "bs58": "^5.0.0"
